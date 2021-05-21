@@ -1,7 +1,5 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
 using System.ComponentModel;
-using System.Windows;
 
 namespace Audio_Sample
 {
@@ -53,10 +51,9 @@ namespace Audio_Sample
             ShowMessageBox?.Invoke(this, args);
         }
 
-        protected ShowCommonDialogEventArgs OnShowCommonDialog(ShowCommonDialogEventArgs args)
+        protected void OnShowCommonDialog(ShowCommonDialogEventArgs args)
         {
             ShowCommonDialog?.Invoke(this, args);
-            return args;
         }
     }
 }
